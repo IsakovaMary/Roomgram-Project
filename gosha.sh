@@ -1,5 +1,5 @@
 #!/bin/bash
 
 echo "Remove less files"
-rm -R source/less
+rm -R docs/less
 exit 0
