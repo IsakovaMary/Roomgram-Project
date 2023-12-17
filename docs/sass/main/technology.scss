@@ -55,7 +55,7 @@
         content: '';
         position: absolute;
         right: -10%;
-        background: url('../../img/arrowRight.svg') no-repeat;
+        background: url('../img/arrowRight.svg') no-repeat;
         width: 30px;
         height: 20px;
         animation: arrowX 0.9s ease alternate infinite;
@@ -71,7 +71,7 @@
             position: absolute;
             top: 100%;
             right: 45%;
-            background: url('../../img/arrowDown.svg') no-repeat;
+            background: url('../img/arrowDown.svg') no-repeat;
             width: 30px;
             height: 20px;
             animation: arrowY 0.9s ease alternate infinite;
