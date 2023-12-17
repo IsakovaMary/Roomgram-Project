@@ -1,0 +1,37 @@
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: 3px solid var(--color-accent);
+    background-color: var(--color-white);
+    background: url('../../img/arrowTop.jpg') no-repeat;
+    background-size: 50px 50px;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    @media (max-width: $tablet-width) {
+        width: 30px;
+        height: 30px;
+        right: 10px;
+        bottom: 15px;
+        background-size: 40px 40px;
+    }
+
+    @media (min-width: $phone-width) and (max-width: $tablet-mini-width) {
+        width: 20px;
+        height: 20px;
+        right: 5px;
+        bottom: 10px;
+        background-size: 30px 30px;
+    }
+}

@@ -1,0 +1,28 @@
+@import "global/variables.scss";
+@import "global/visually-hidden.scss";
+@import "global/main-body.scss";
+@import "global/button.scss";
+@import "global/mixins.scss";
+@import "global/overlay.scss";
+@import "global/modal-open.scss";
+@import "global/modal-hello.scss";
+@import "global/modal-flags.scss";
+@import "global/back-to-top.scss";
+
+
+@import "header/main-header.scss";
+@import "header/main-nav.scss";
+
+@import "main/hero-block.scss";
+@import "main/wrapper-hero.scss";
+@import "main/possibilities.scss";
+@import "main/tours.scss";
+@import "main/technology.scss";
+@import "main/mode.scss";
+@import "main/functions.scss";
+@import "main/platforms.scss";
+
+@import "footer/main-footer.scss";
+@import "footer/clients-list.scss";
+@import "footer/buttons.scss";
+@import "footer/social-list.scss";

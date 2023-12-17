@@ -1,0 +1,26 @@
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons__item {
+    text-decoration: none;
+    background-color: var(--color-white);
+    color: var(--color-accent);
+    font-size: 14px;
+    line-height: 21px;
+    padding: 6px 10px;
+    border-radius: 5px;
+    width: 100%;
+    transition: all 0.2s linear;
+
+    &:hover {
+        outline: 3px solid #fff;
+        background-color: #1B99D5;
+        color: #fff;
+        opacity: 0.6;
+    }
+}
