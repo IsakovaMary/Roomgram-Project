@@ -8,13 +8,13 @@ import browser from 'browser-sync';
 // Styles
 
 export const styles = () => {
-  return gulp.src('docs/sass/style.scss', { sourcemaps: true })
+  return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest('docs/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -35,8 +35,8 @@ const server = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('docs/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('docs/*.html').on('change', browser.reload);
+  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
+  gulp.watch('source/*.html').on('change', browser.reload);
 }
 
 

@@ -1,0 +1,16 @@
+
+.modal__close {
+    position: absolute;
+    display: block;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 3em;
+    top: 3em;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+        transform: rotate(360deg);
+    }
+}

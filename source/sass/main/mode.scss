@@ -1,0 +1,241 @@
+.mode {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    @media (max-width: $desktop-width) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin-bottom: 0;
+    }
+
+    @media (max-width: $tablet-max-width) {
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.mode__wrapper {
+    padding: 0 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: $desktop-max-width;
+    margin: 0 auto;
+
+    @media (max-width: $tablet-max-width) {
+        @include __wrapper-mini-desktop;
+
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0;
+    }
+
+    @media (min-width: $phone-width) and (max-width: $tablet-mini-width) {
+        @include __wrapper-mini-tablet;
+    }
+}
+
+.mode__wrapper--reverse {
+    flex-direction: row-reverse;
+
+    @media (max-width: $tablet-max-width) {
+        flex-direction: column-reverse;
+    }
+}
+
+.mode__text {
+    width: 50%;
+    margin-bottom: 40px;
+
+    @media (max-width: $tablet-max-width) {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.mode__title {
+    @include __title;
+
+    margin: 25px 0;
+
+    @media (max-width: $tablet-width) {
+        margin-bottom: 30px;
+    }
+}
+
+.mode__title--mode {
+    font-size: 48px;
+
+    @media (max-width: $desktop-mini-width) {
+        font-size: 36px;
+        line-height: 30px;
+    }
+
+    @media (max-width: $tablet-max-width) {
+        text-align: center;
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+.mode__title--line-height {
+    @include __title-line-height;
+
+    @media (max-width: $desktop-width) {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    @media (max-width: calc($desktop-mini-width - 1px)) {
+        font-size: 24px;
+        line-height: 44px;
+        margin: 25px 0;
+    }
+
+    @media (max-width: $tablet-mini-width) {
+        text-align: center;
+        font-size: 22px;
+        line-height: 36px;
+    }
+}
+
+.mode__description {
+    @include __description;
+
+    @media (max-width: $desktop-mini-width) {
+        margin-bottom: 0;
+
+        & br {
+            display: none;
+        }
+    }
+}
+
+.mode__wrapper-img {
+    width: 50%;
+    height: 400px;
+
+    @media (max-width: $tablet-max-width) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+}
+
+.mode__iframe {
+    width: 100%;
+    height: 100%;
+
+    @media (max-width: $tablet-max-width) {
+        max-width: 80%;
+    }
+
+    @media (max-width: $tablet-width) {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.mode__img {
+    display: block;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 10px;
+
+    @media (max-width: $desktop-mini-width) {
+        width: 100%;
+    }
+}
+
+.mode__img--tours {
+    width: 150px;
+}
+
+.mode__link {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}
+
+.mode__button-wrapper {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    gap: 40px;
+    padding: 0 60px;
+
+    @media (min-width: $desktop-max-width) {
+        max-width: $desktop-max-width;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    @media (max-width: $tablet-max-width) {
+        grid-column: 1 / -1;
+    }
+
+    @media (min-width: $phone-width) and (max-width: $tablet-mini-width) {
+        @include __wrapper-mini-tablet;
+
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.mode__button-wrapper--platforms {
+    grid-template-columns: 1fr 1fr;
+}
+
+.mode__button-left {
+    grid-column: 1 / 2;
+    width: 455px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: $desktop-width) {
+        font-size: 18px;
+        line-height: 33px;
+        min-height: 57px;
+        width: 340px;
+        padding: 0 1em;
+    }
+
+    @media (max-width: $tablet-max-width) {
+        grid-column: 1 / -1;
+        margin: 0 auto;
+        margin-top: 60px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width: $tablet-mini-width) {
+        width: 100%;
+    }
+
+}
+
+.mode__video-container {
+    width: 50%;
+    margin: auto 0;
+
+    @media (max-width: $tablet-max-width) {
+        width: 100%;
+    }
+}
+
+.mode__video {
+    width: 100%;
+}

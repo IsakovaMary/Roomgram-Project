@@ -1,0 +1,23 @@
+picture {
+    display: block;
+    box-sizing: border-box;
+    max-width: 50%;
+    margin: auto 0;
+
+    @media (max-width: $tablet-max-width) {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    @media (max-width: $tablet-width) {
+        max-width: 100%;
+    }
+}
+
+.main-body {
+    background-color: var(--color-white);
+    color: var(--color-grey900);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+

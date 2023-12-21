@@ -1,0 +1,26 @@
+.social-list {
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    @media (max-width: $tablet-width) {
+        padding: 0 15px;
+        margin: 0;   
+        margin-bottom: 20px;     
+    }
+}
+
+.social-list__item a {
+    color: var(--color-white);
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+        opacity: 0.6;
+    }
+}

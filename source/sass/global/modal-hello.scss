@@ -1,0 +1,34 @@
+.modal-hello {
+    justify-content: center;
+}
+
+.modal-hello__video-wrapper {
+    max-width: 1200px;
+    width: 76%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.modal-hello__center {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-hello__video-container {
+    position: relative;
+    display: block;
+    background-color: var(--color-grey300);
+    border-radius: 5px;
+    padding: 20px 10px 10px;
+}
+
+.modal-hello__video {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
